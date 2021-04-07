@@ -16,11 +16,13 @@ export const Hooks3 = ()=>{
         console.log(inputRef.current)
     })
 
+    const focus = ()=>inputRef.current.focus()
+
     return(
         <div>
             <h1>количесвто  {renderCount.current}</h1>
             <input ref={inputRef} type="text" onChange={e => setValue(e.target.value)} value ={value}/>
-            <button className='btn btn-success'>focus</button>
+            <button className='btn btn-success' onClick={focus}>focus</button>
         </div>
     )
 }
