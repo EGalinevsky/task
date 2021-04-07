@@ -22,7 +22,7 @@ export const Hooks3 = ()=>{
         <div>
             <h1>количесвто  {renderCount.current}</h1>
             <input ref={inputRef} type="text" onChange={e => setValue(e.target.value)} value ={value}/>
-            <button className='btn btn-success' onClick={focus}>focus</button>
+            <button className='btn btn-success' onClick={focus}>focfefefus</button>
         </div>
     )
 }
