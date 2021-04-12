@@ -3,10 +3,10 @@ import React, { useState } from "react";
 export const Hooks1 = () => {
   const [count, setCount] = useState(0);
   const [second, setSecond] = useState(0);
-  const [state, setState] = useState({
-      title: 'счетчик',
-      date: Date.now()
-  })
+  // const [state, setState] = useState({
+  //     title: 'счетчик',
+  //     date: Date.now()
+  // })
 
   const clickButton = () => {
     setCount(count + 1);
@@ -44,11 +44,7 @@ export const Hooks1 = () => {
         <button onClick={secondButton}>click me+</button>
         <button onClick={secondButtonminus}>click me-</button>
       </div>
-      <div>
-        <p>hello this click {state}</p>
-        <button onClick={secondButton}>click me+</button>
-        <button onClick={secondButtonminus}>click me-</button>
-      </div>
+      
     </div>
   );
 };
