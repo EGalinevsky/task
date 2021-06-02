@@ -9,7 +9,7 @@ export const Hooks3 = ()=>{
     // const[renderCount, setRenderCount]= useState(1)
     const[value, setValue]= useState('')
     const renderCount = useRef(0)
-    const inputRef = useRef(null)
+    const inputRef = useRef('0')
 
     useEffect(()=>{
         renderCount.current++
