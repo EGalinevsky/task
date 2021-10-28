@@ -7,9 +7,13 @@ export const useAlert = () => {
 };
 
 const reducer = (state, action) => {
-  switch ((action.type)) {
-    case 'show': return {...state, visible:true, text: action.text}
-    case 'hide': return {...state, visible:false}
+  console.log(state)  
+  console.log(action.type)
+
+
+  switch (action.type) {
+    case 'show': return {...state, visible:true, text: action.text};
+    case 'hide': return {...state, visible:false,} 
     default:
       return state;
   }
@@ -22,7 +26,7 @@ export const AlertProvider = ({ children }) => {
   });
 
   const show = text => dispatch({ type: "show", text });
-  const hide = () => dispatch({ type: "hide" });
+  const hide = () => dispatch({ type: "hide", });
 
   return (
     <AlertContainer.Provider
@@ -31,9 +35,7 @@ export const AlertProvider = ({ children }) => {
         show, hide
       }}
     >
-      {/* <AlertToogleContainer.Provider value={toggleAlert}> */}
       {children}
-      {/* </AlertToogleContainer.Provider> */}
     </AlertContainer.Provider>
   );
 };
