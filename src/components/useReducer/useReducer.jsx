@@ -12,7 +12,7 @@ export const Hooks7 = () => {
   const[users, setUsers] = useState([])
   const URL =  'https://jsonplaceholder.typicode.com/users' 
   const[boom, setBoom] = useState('')
-  
+
   const arr = [
     {
       name: 'gluk',
@@ -51,7 +51,6 @@ export const Hooks7 = () => {
 
     }
   }  
-  console.log(users)
   useEffect(()=>{
     getUser()
   },[])

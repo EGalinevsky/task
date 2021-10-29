@@ -1,10 +1,12 @@
 import React from 'react'
-
+import s from './user.module.css'
 export const UsersArr = ({users}) =>{    
-    console.log(users)
-    return(
-        <>
-        {users.map(user=> <p key={user.id   }>{user.name}</p>)}    
-        </>
+        return(
+        <ul className={s.userList}>
+        {users.map(user=> 
+            <li className={s.listBtn} key={user.id   }>
+                <button className={s.btnName}>{user.name}</button>
+            </li>)}    
+        </ul>
     )
 }
