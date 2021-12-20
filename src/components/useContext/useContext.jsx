@@ -13,7 +13,7 @@ export const Hooks6 = () => {
       <div>
         <div>
           useContext
-          <ContextContainer  toggleAlert={()=>{}} />
+          <ContextContainer toggleAlert={() => { }} />
           <Alert />
         </div>
       </div>
