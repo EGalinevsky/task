@@ -1,0 +1,28 @@
+.userList{
+    display: inline-flex;
+    flex-direction: column;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 25px;
+    padding: 5px 20px;
+}
+
+.userList li{
+    list-style: none;
+}
+
+.listBtn{
+    margin: 5px 0;
+}
+
+.btnName{
+    border: 0;
+    background: none;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.btnName:hover{
+    background: #8fb5e7;
+    border-radius: 10px;
+    color: #fff;
+}

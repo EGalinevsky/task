@@ -4,7 +4,6 @@ import { useAlert } from "./alertContainer";
 
 export default function Alert() {
   const alert = useAlert()
-
   const style = {
     color: "red",
     border: "1px solid blue",
