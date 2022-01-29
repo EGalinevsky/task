@@ -17,7 +17,8 @@ function App() {
       {/* <Hooks4 /> */}
       {/* <Hooks5 /> */}
       {/* <Hooks6 /> */}
-      <Hooks7/>
+      {/* <Hooks7/> */}
+      Hello world
     </div>
   );
 }
