@@ -5,7 +5,6 @@
 /.pnp
 /.vscdode
 .pnp.js
-.env
 
 # testing
 /coverage
